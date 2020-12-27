@@ -1,14 +1,16 @@
-#Build:
+# simpe-shell
+this is a simple shell for Linux
+##Build:
 	make
 
-#Clean:
+##Clean:
 	make clean
 
-#Usage:
+##Usage:
 	cd ./bin
 	./smpsh
 
-#exmaple:
+##Exmaple:
 notes: $: is present system shell symbol,
 	   # : is simpe-shell symbol.
 ```bash
@@ -41,12 +43,12 @@ $:./smpsh						# begin simple-shell
 $:							    # back to system shell	
 ```
 
-#Features:
+##Features:
 1. support some redirct symbols: {'>', '<','|'}
 2. support run custom simple shell commands whose is implemented basically by me
    egs:ls, wc, cat, exit, quit.
 
-#How to add new command:
+##How to add new command:
 for example, add a wordcount(wc) to simple-shell.
 1. create a wordcount.c file
 2. complete wordcount.c as your interests.
