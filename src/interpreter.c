@@ -1,8 +1,7 @@
 #include "interpreter.h"
 
 /*
- * interprete shell command without pipe signal
- *
+ * interprete shell command without pipe symbol
  * */
 int run_shell(int argc,char argv[MAX_PIPE_NUM][MAX_ARGC][MAX_LEN])
 {
@@ -84,7 +83,7 @@ int run_shell(int argc,char argv[MAX_PIPE_NUM][MAX_ARGC][MAX_LEN])
 }
 
 /*
- * interprete shell command without pipe signal
+ * interprete shell command with pipe symbol
  *
  * */
 int run_pipe_shell(int pipe_num,int argc_group[MAX_LEN],char argv_group[MAX_PIPE_NUM][MAX_ARGC][MAX_LEN]) 
