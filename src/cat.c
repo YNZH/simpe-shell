@@ -25,13 +25,20 @@ int main(int argc,char * argv[])
 						exit(1);
 				}
 				char ch;
-				int linenum = 0;
+				int linenum = 1;
 				printf("%d ",linenum++);
 				while((ch = getc(fd)) != EOF)
 				{
 						printf("%c",ch);
 						if(ch == 0x0A)
-								printf("%d ",linenum++);
+						{
+								if((ch = getc(fd))!= EOF)
+								{
+										printf("%d %c",linenum++, ch);
+								}
+								else
+										break;
+						}
 				}
 		}
 		return 0;
